@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import BookCard from "./BookCard";
 
-const BookList = (props)  => {
+const SavedBooks = (props)  => {
       return(
           <div className = "list">
             {props.books.map((book, i) => {
@@ -12,11 +12,10 @@ const BookList = (props)  => {
                 title = {book.volumeInfo.title}
                 author = {book.volumeInfo.author}
                 published = {book.volumeInfo.publishedDate}
-                favorite = {book.favorite}
                 />
             })
          }
           </div>
       )
   }
-export default BookList
+export default SavedBooks
